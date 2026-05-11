@@ -1,6 +1,6 @@
 # Bestarion AI Operation V1
 
-React + Vite + TypeScript project packaged for GitHub Pages deployment.
+Interactive AI Operation training web app for Bestarion, built with React + Vite + TypeScript and deployed via GitHub Pages.
 
 ## Local development
 
@@ -15,14 +15,10 @@ npm run dev
 npm run build
 ```
 
-## GitHub Pages deployment
+## GitHub Pages
 
-This project is configured for repository name `bestarion-ai-operation-v1`.
-
-Vite base path is set in `vite.config.ts`:
+The Vite `base` path is configured as:
 
 ```ts
 base: '/bestarion-ai-operation-v1/'
 ```
-
-After pushing to the `main` branch, GitHub Actions will build and deploy the site to GitHub Pages.
