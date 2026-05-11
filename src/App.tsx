@@ -222,10 +222,10 @@ const App = () => {
           <div className="flex items-center gap-3">
             <div className="bg-white p-1 rounded-lg overflow-hidden h-12 w-auto flex items-center justify-center">
               <img 
-                src="Bestarion_Logo_Bigsize.jpg" 
+                src={`${import.meta.env.BASE_URL}Bestarion_Logo_Bigsize.jpg`} 
                 alt="Bestarion Logo" 
                 className="h-full w-auto object-contain"
-                onError={(e) => { e.currentTarget.style.display = 'none'; }}
+                onError={(e) => { (e.currentTarget as HTMLImageElement).style.display = 'none'; }}
               />
             </div>
             <div>
@@ -657,10 +657,10 @@ const App = () => {
             <div className="flex items-center gap-2 mb-2">
               <div className="h-6 w-auto overflow-hidden">
                 <img 
-                  src="Bestarion_Logo_Bigsize.jpg" 
+                  src={`${import.meta.env.BASE_URL}Bestarion_Logo_Bigsize.jpg`} 
                   alt="Bestarion Logo" 
                   className="h-full w-auto object-contain brightness-0 opacity-50"
-                  onError={(e) => { e.currentTarget.style.display = 'none'; }}
+                  onError={(e) => { (e.currentTarget as HTMLImageElement).style.display = 'none'; }}
                 />
               </div>
               <span className="font-black text-slate-400 tracking-tighter text-sm uppercase">AI FLUENCY MASTERY</span>
